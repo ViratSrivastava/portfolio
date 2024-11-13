@@ -1,11 +1,12 @@
 // src/components/sections/Hero.tsx
+import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDownIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-scroll';
 
 const Hero = () => {
   return (
-    <motion.section 
+    <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -20,7 +21,7 @@ const Hero = () => {
           alt="Profile"
           className="w-32 h-32 rounded-full mx-auto mb-8 border-4 border-white"
         />
-        <motion.h1 
+        <motion.h1
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.3 }}
