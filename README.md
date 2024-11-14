@@ -1,6 +1,6 @@
-# portfolio
+# Portfolio Website
 
-Portfolio Website
+## Repository Structure
 
 ```bash
     ai-ml-portfolio/
@@ -23,14 +23,23 @@ Portfolio Website
     │   │   │   ├── Experience.tsx
     │   │   │   └── Contact.tsx
     │   │   └── shared/
-    │   │       ├── Card.tsx
-    │   │       ├── Button.tsx
-    │   │       └── AnimatedSection.tsx
+    │   │       ├── ErrorBoundary.tsx
+    |   |       ├── Button.tsx
+    |   |       ├── Card.tsx
+    │   │       ├── ErrorFallback.tsx
+    │   │       ├── AnimatedSection.tsx
+    │   │       ├── AnimatedSection.tsx
+    |   |       └── AnimatedSection.tsx
+    |   ├── context
+    |   |   └── context.tsx
     │   ├── hooks/
-    │   │   └── useScrollAnimation.ts
+    │   │   ├── useScrollAnimation.ts
+    |   |   └── useTheme.tsx
+    │   ├── pages/
+    │   │   └── HomePage.tsx
     │   ├── types/
     │   │   └── index.ts
-    │   ├── App.tsx
+    │   ├── App.tsx DONE
     │   ├── main.tsx DONE
     │   └── index.css DONE
     ├── index.html DONE
@@ -39,5 +48,4 @@ Portfolio Website
     ├── vite.config.ts DONE - recheck
     ├── tailwind.config.js DONE
     └── postcss.config.js DONE
-
 ```
