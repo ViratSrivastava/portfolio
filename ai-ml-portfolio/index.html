@@ -25,7 +25,7 @@
     <!-- Hero Section -->
     <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
         <div class="container mx-auto text-center px-4">
-            <img src="https://via.placeholder.com/150" alt="Profile" class="rounded-full mx-auto mb-8 border-4 border-white">
+            <img src="public\assets\images\profile--photo.JPG" alt="Profile" class="rounded-full mx-auto mb-8 border-4 border-white">
             <h1 class="text-4xl font-bold mb-4">Virat Srivastava</h1>
             <p class="text-xl mb-6">AI/ML Engineer | GPU Computing Specialist | FinTech Enthusiast</p>
             <div class="flex justify-center space-x-4">
@@ -91,15 +91,18 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">Experience</h2>
             <div class="max-w-3xl mx-auto text-gray-600 leading-relaxed">
-                <h3 class="text-xl font-semibold">Job Title at Company Name</h3>
-                <p class="mb-4">Description of responsibilities and achievements in this role.</p>
-                <h3 class="text-xl font-semibold">Job Title at Company Name</h3>
-                <p>Description of responsibilities and achievements in this role.</p>
+                <h3 class="text-xl font-semibold">Machine Learning Project Intern at National Remote Sensing Center, ISRO</h3>
+                <p class="mb-1 text-justify">Roles: • ML Ops • Machine Learning Engineer • Deep Learning Engineer • Data Scientist.</p>
+                <p class="mb-4 text-justify">My primary project focused on renewable solar energy estimation in urban areas using satellite imagery. I developed advanced deep-learning models for object detection and classification to support urban development analysis, programming and optimizing data preprocessing and post-processing pipelines covering over 3.5 million square kilometers. The project achieved ground-truth accuracy rates between 97% and 99% across all pipelines, and I successfully demonstrated these results to key stakeholders.</p>
+                <h3 class="text-xl font-semibold">Data Analyst and ML Developer at Omdena Mexico</h3>
+                <p class="mb-1 text-justify">Roles: • Deep Learning Engineer • Data Scientist.</p>
+                <p class="mb-4 text-justify">I contributed to an AI-based road inspection system, focusing on model training and image preprocessing for over 3,000 images, which led to a 30% reduction in parameters. Working collaboratively across three teams, I improved model accuracy to 85%, ensuring timely project delivery. Additionally, I contributed to over 30% of the geospatial data collection and model optimization, supporting the development of a robust solution.</p>
+
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section -->    
     <section id="contact" class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">Contact Me</h2>
@@ -128,25 +131,4 @@
         </div>
     </footer>
 </body>
-</html> To address the issues in the provided code, here are some specific fixes and enhancements:
-
-### tsconfig.json
-- Ensure that the `module` option is set according to your project needs. If you're using ES modules, change it to `"module": "esnext"`.
-- If you are using React, ensure that the `jsx` option is set to `"react-jsx"` for React 17 and above.
-
-Here’s an updated version of the `tsconfig.json`:
-
-```json
-{
-  "compilerOptions": {
-    "target": "es2016",
-    "jsx": "react-jsx",
-    "module": "esnext",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true,
-    "incremental": true,
-    "lib": ["es2016", "dom"]
-  }
-}
+</html> 
