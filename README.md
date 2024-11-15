@@ -1,6 +1,6 @@
 # Portfolio Website
 
-## Repository Structure
+Repository Structure
 
 ```bash
     ai-ml-portfolio/
@@ -48,4 +48,6 @@
     ├── vite.config.ts DONE - recheck
     ├── tailwind.config.js DONE
     └── postcss.config.js DONE
+    .gitignore
+    README.md
 ```
