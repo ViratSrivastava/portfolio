@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virat Srivastava - AI/ML Engineer</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </head>
 <body class="bg-gray-100">
-    <!-- Navigation -->
-    <nav class="bg-gray-900 text-white p-4 sticky top-0 z-50">
+    <nav class="bg-gray-900 text-white p-4 sticky top-0 z-50 custom-nav">
+    <nav class="bg-gray-900 text-white p-4 sticky top-0 z-50" style="font-family: 'Futura', sans-serif; font-size: 16px;">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-xl font-bold">Virat Srivastava</a>
+            <a href="#" style="font-size: 3.5rem; font-family: 'Futura Light', sans-serif; font-weight: normal;">Virat Srivastava</a>
             <div class="space-x-6">
-                <a href="#about" class="hover:text-blue-400">About</a>
-                <a href="#skills" class="hover:text-blue-400">Skills</a>
-                <a href="#projects" class="hover:text-blue-400">Projects</a>
-                <a href="#experience" class="hover:text-blue-400">Experience</a>
-                <a href="#contact" class="hover:text-blue-400">Contact</a>
+                <a href="#about" style="font-size: 2rem; font-family: 'Futura Light', sans-serif; font-weight: normal;" class="hover:text-blue-400">About</a>
+                <a href="#skills" style="font-size: 2rem; font-family: 'Futura Light', sans-serif; font-weight: normal;" class="hover:text-blue-400">Skills</a>
+                <a href="#projects" style="font-size: 2rem; font-family: 'Futura Light', sans-serif; font-weight: normal;" class="hover:text-blue-400">Projects</a>
+                <a href="#experience" style="font-size: 2rem; font-family: 'Futura Light', sans-serif; font-weight: normal;" class="hover:text-blue-400">Experience</a>
+                <a href="#contact" style="font-size: 2rem; font-family: 'Futura Light', sans-serif; font-weight: normal;" class="hover:text-blue-400">Contact</a>
             </div>
         </div>
     </nav>
@@ -130,5 +131,17 @@
             <p>&copy; 2023 Virat Srivastava. All rights reserved.</p>
         </div>
     </footer>
+    <!-- Scripts # this one is for scroll effect-->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html> 
