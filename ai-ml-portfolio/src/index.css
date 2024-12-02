@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@400;500;700&family=Fira+Code:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Futura:wght@300&display=swap');
+/* Ensure you import Futura Light */
+
+.custom-link:hover {
+  color: #3B82F6;
+  /* Tailwind's blue-400 */
+}
 
 @tailwind base;
 @tailwind components;
@@ -56,7 +63,12 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -74,11 +86,17 @@ a:hover {
   color: var(--color-secondary);
 }
 
+/* Smooth Scroll for Anchor Links */
+a[href^="#"] {
+  scroll-behavior: smooth;
+}
+
 /* Custom Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -89,6 +107,7 @@ a:hover {
     transform: translateY(20px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -152,3 +171,4 @@ code {
   padding: 0.2rem 0.4rem;
   border-radius: 0.3rem;
 }
+
